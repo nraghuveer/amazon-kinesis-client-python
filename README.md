@@ -66,7 +66,7 @@ From the root of this repo, run:
 Now the `amazon_kclpy` and [boto][boto] (used by the sample putter script) and required
 jars should be installed in your environment. To start the sample putter, run:
 
-    sample_kinesis_wordputter.py --stream words -w cat -w dog -w bird -w lobster
+    sample_kinesis_wordputter.py --stream hive -w cat -w dog -w bird -w lobster
 
 This will create an Amazon Kinesis stream called words and put the words
 specified by the -w options into the stream once each. Use -p SECONDS to
