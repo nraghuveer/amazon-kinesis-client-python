@@ -87,14 +87,12 @@ a fresh startup. To run the sample application you can use a helper script
 included in this package. Note you must provide a path to java (version 1.7
 or greater) to run the Amazon KCL.
 
-    amazon_kclpy_helper.py --print_command \
-        --java <path-to-java> --properties samples/sample.properties
+   amazon_kclpy_helper.py --print_command --java $(which java) --properties samples/sample.properties
 
 This will print the command needed to run the sample which you can copy paste,
 or surround the command with back ticks to run it.
 
-    `amazon_kclpy_helper.py --print_command \
-        --java <path-to-java> --properties samples/sample.properties`
+    `amazon_kclpy_helper.py --print_command --java $(which java) --properties samples/sample.properties`
 
 Alternatively, if you don't have the source on hand, but want to run the sample
 app you can use the `--sample` argument to indicate you'd like to get the
